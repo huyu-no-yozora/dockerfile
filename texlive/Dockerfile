@@ -12,6 +12,7 @@ RUN apt update \
       fonts-noto-cjk-extra \
       libfontconfig-dev \
       ghostscript \
+      build-essential \
  && mkdir -p /tmp/src/tl \
  && wget --no-verbose -O /tmp/src/install-tl.tar.gz \
       http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
