@@ -6,7 +6,12 @@ RUN apt update \
  && npm install --global npm@latest \
  && npm install --global firebase-tools \
  && apt autoremove -y \
- && rm -rf /var/lib/apt/lists/*
+ && rm -rf /var/lib/apt/lists/* \
+ && mkdir /fbwork
+
+VOLUME /fbwork
+
+WORKDIR /fbwork
 
 CMD ["/bin/bash"]
 
